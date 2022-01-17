@@ -1,0 +1,186 @@
+{
+	"info": {
+		"_postman_id": "fcbc9dc2-fdaf-42c9-ac8f-3163f93fde60",
+		"name": "Portfolio Viewer",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Health Check",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "clientsecret",
+						"value": "123",
+						"type": "default"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8081/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get User List",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "clientsecret",
+						"value": "8798",
+						"type": "default"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8081/userList",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"userList"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Add User",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "clientsecret",
+						"value": "7787",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"userList\": [\n        {\n            \"client_first_name\": \"Srikanth\",\n            \"client_last_name\": \"Kini\",\n            \"client_email\": \"srikanthgk27gmail.com\",\n            \"client_mobile_number\": \"9591642782\"\n        },\n        {\n            \"client_first_name\": \"Srinath\",\n            \"client_last_name\": \"Kini\",\n            \"client_email\": \"srinathkini7@gmail.com\",\n            \"client_mobile_number\": \"9686777750\"\n        },\n        {\n            \"client_first_name\": \"Srinidhi\",\n            \"client_last_name\": \"kini\",\n            \"client_email\": \"srinidhikini7@gmail.com\",\n            \"client_mobile_number\": \"9743265127\"\n        }\n    ]\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8081/addUser",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"addUser"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Deactivate User",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "clientsecret",
+						"value": "3277",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"userList\": [\n        {\n            \"client_id\": \"1000\"\n        },\n        {\n            \"client_id\": \"1001\"\n        }\n    ]\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8081/deactivateUser",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"deactivateUser"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Activate User",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "clientsecret",
+						"value": "2246",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"userList\": [\n        {\n            \"client_id\": \"1000\"\n        },\n        {\n            \"client_id\": \"1001\"\n        }\n    ]\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8081/activateUser",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"activateUser"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Stock List",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "clientsecret",
+						"value": "2246",
+						"type": "default"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8081/viewstocks",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"viewstocks"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
